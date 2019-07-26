@@ -80,5 +80,12 @@ from sklearn.metrics import confusion_matrix, classification_report
 cm = confusion_matrix(y_test, y_pred)
 cr = classification_report(y_test, y_pred)
 
+from sklearn.externals import joblib
+joblib.dump(classifier, 'ANN_RELU_Classifier.pkl')
+
+
+
+
+
 
 
